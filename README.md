@@ -1,25 +1,31 @@
 # freelancer-portfolio
 
-A multi-page freelance portfolio site — Home, About, Skills, Projects,
-Testimonials, and Contact each on their own page. Built with plain HTML,
-CSS, and JavaScript, no build step required.
+A Laravel-powered freelance portfolio site — Home, About, Skills, Projects,
+Testimonials, and Contact, each served from its own route and Blade view.
 
-## Running locally
+## Requirements
 
-Open `index.html` directly in a browser, or serve the folder with any
-static file server, e.g.:
+- PHP 8.2+
+- Composer
+
+## Setup
 
 ```bash
-npx serve .
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan serve
 ```
+
+Then visit `http://localhost:8000`.
 
 ## Structure
 
-- `index.html` — home page (hero + short intro)
-- `about.html` — about page
-- `skills.html` — skills page
-- `projects.html` — projects page
-- `testimonials.html` — testimonials page
-- `contact.html` — contact page
-- `styles.css` — shared styling (light/dark aware, responsive)
-- `script.js` — mobile nav toggle and footer year
+- `routes/web.php` — one named route per page (`home`, `about`, `skills`,
+  `projects`, `testimonials`, `contact`)
+- `app/Http/Controllers/PageController.php` — resolves each route to a view,
+  with the page content (skills, projects, testimonials) passed in as data
+- `resources/views/layouts/app.blade.php` — shared header/nav/footer layout
+- `resources/views/pages/*.blade.php` — one view per page
+- `public/css/styles.css`, `public/js/script.js` — shared styling (light/dark
+  aware, responsive) and the mobile nav toggle
