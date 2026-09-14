@@ -1,8 +1,8 @@
 # freelancer-portfolio
 
-A single-page freelance portfolio site — hero, about, skills, projects,
-testimonials, and a contact section. Built with plain HTML, CSS, and
-JavaScript, no build step required.
+A multi-page freelance portfolio site — Home, About, Skills, Projects,
+Testimonials, and Contact each on their own page. Built with plain HTML,
+CSS, and JavaScript, no build step required.
 
 ## Running locally
 
@@ -15,6 +15,11 @@ npx serve .
 
 ## Structure
 
-- `index.html` — page markup and content
-- `styles.css` — styling (light/dark aware, responsive)
+- `index.html` — home page (hero + short intro)
+- `about.html` — about page
+- `skills.html` — skills page
+- `projects.html` — projects page
+- `testimonials.html` — testimonials page
+- `contact.html` — contact page
+- `styles.css` — shared styling (light/dark aware, responsive)
 - `script.js` — mobile nav toggle and footer year

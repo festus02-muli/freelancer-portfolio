@@ -99,6 +99,10 @@ a:hover {
   color: var(--accent);
 }
 
+.site-nav a.active {
+  color: var(--accent);
+}
+
 .nav-cta {
   padding: 8px 16px;
   border-radius: 999px;
@@ -201,6 +205,11 @@ a:hover {
 .section {
   padding-block: 64px;
   border-top: 1px solid var(--border);
+}
+
+.page-hero {
+  border-top: none;
+  padding-block-start: 56px;
 }
 
 .section-title {
