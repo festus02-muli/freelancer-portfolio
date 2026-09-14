@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festus Muli | Freelance Web Developer</title>
+  <meta name="description" content="Portfolio of Festus Muli, a freelance web developer building fast, modern websites and applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Festus<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">Freelance Web Developer</p>
+      <h1>Hi, I'm Festus Muli.<br />I build clean, reliable web experiences.</h1>
+      <p class="hero-sub">
+        I help startups and small businesses design, build, and ship modern websites
+        and web applications — from first sketch to production launch.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <p>
+          I'm a freelance web developer focused on building fast, accessible, and
+          maintainable websites and applications. I work directly with founders and
+          teams to turn ideas into shipped products — handling everything from UI
+          design and front-end development to backend integrations and deployment.
+        </p>
+        <p>
+          My approach is simple: understand the goal, keep the solution as lean as
+          possible, and communicate clearly at every step. Whether it's a marketing
+          site, a dashboard, or a full web app, I care about the details that make
+          software feel good to use.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-grid">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>REST &amp; GraphQL APIs</li>
+        <li>Responsive Design</li>
+        <li>Git &amp; GitHub</li>
+        <li>Performance &amp; Accessibility</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true"></div>
+          <h3>Project One</h3>
+          <p>A short description of the project, the problem it solved, and the stack used to build it.</p>
+          <a href="#" class="project-link">View project →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true"></div>
+          <h3>Project Two</h3>
+          <p>A short description of the project, the problem it solved, and the stack used to build it.</p>
+          <a href="#" class="project-link">View project →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true"></div>
+          <h3>Project Three</h3>
+          <p>A short description of the project, the problem it solved, and the stack used to build it.</p>
+          <a href="#" class="project-link">View project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial">
+          <p>"Great to work with — clear communication and delivered exactly what we needed, on time."</p>
+          <cite>— Client Name, Company</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Took our rough idea and turned it into a polished, working product."</p>
+          <cite>— Client Name, Company</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="contact-sub">Have a project in mind? I'd love to hear about it.</p>
+      <a href="mailto:festus@ngongroad.org" class="btn btn-primary">festus@ngongroad.org</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Festus Muli. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
